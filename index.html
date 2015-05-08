@@ -10,8 +10,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=0.8">
 		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/animations.css">
 		<link rel="stylesheet" href="css/style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="js/scroll-magic.min.js"></script>
 		<script src="js/script.js"></script>
 
 		<!-- <script src="js/vendor/modernizr.js"></script> -->
@@ -92,7 +94,7 @@
 		<div class="wrapper">
 			<header><h2>Projekty</h2></header>
 			<ul>
-				<li class="project-box">
+				<li class="hidden">
 					<img class="project-photo" src="http://placehold.it/350x240">
 					<footer>
 						<h1>Projekt 1</h1>
@@ -100,7 +102,7 @@
 					</footer>
 					<p class="description">Lorem ipsum dolor sit amet interdum vehicula. Etiam urna turpis vitae odio. In laoreet feugiat. Proin urna. Nam quis felis sollicitudin vitae, consequat non, fringilla.Nam in posuere sed, congue et, justo. Vestibulum consectetuer adipiscing aliquet in, adipiscing gravida non, ipsum. Nam vestibulum in, mollis nulla ligula ut tellus malesuada. <a href="#">→</a></p>
 				</li>
-				<li class="project-box">
+				<li class="hidden">
 					<img class="project-photo" src="http://placehold.it/350x240">
 					<footer>
 						<h1>Projekt 2</h1>
@@ -108,7 +110,7 @@
 					</footer>
 					<p class="description">Lorem ipsum dolor sit amet interdum vehicula. Etiam urna turpis vitae odio. In laoreet feugiat. Proin urna. Nam quis felis sollicitudin vitae, consequat non, fringilla.Nam in posuere sed, congue et, justo. Vestibulum consectetuer adipiscing aliquet in, adipiscing gravida non, ipsum. Nam vestibulum in, mollis nulla ligula ut tellus malesuada. <a href="#">→</a></p>
 				</li>
-				<li class="project-box">
+				<li class="hidden">
 					<img class="project-photo" src="http://placehold.it/350x240">
 					<footer>
 						<h1>Projekt 3</h1>
@@ -116,7 +118,7 @@
 					</footer>
 					<p class="description">Lorem ipsum dolor sit amet interdum vehicula. Etiam urna turpis vitae odio. In laoreet feugiat. Proin urna. Nam quis felis sollicitudin vitae, consequat non, fringilla.Nam in posuere sed, congue et, justo. Vestibulum consectetuer adipiscing aliquet in, adipiscing gravida non, ipsum. Nam vestibulum in, mollis nulla ligula ut tellus malesuada. <a href="#">→</a></p>
 				</li>
-				<li class="project-box">
+				<li class="hidden">
 					<img class="project-photo" src="http://placehold.it/350x240">
 					<footer>
 						<h1>Projekt 4</h1>
@@ -124,7 +126,7 @@
 					</footer>
 					<p class="description">Lorem ipsum dolor sit amet interdum vehicula. Etiam urna turpis vitae odio. In laoreet feugiat. Proin urna. Nam quis felis sollicitudin vitae, consequat non, fringilla.Nam in posuere sed, congue et, justo. Vestibulum consectetuer adipiscing aliquet in, adipiscing gravida non, ipsum. Nam vestibulum in, mollis nulla ligula ut tellus malesuada. <a href="#">→</a></p>
 				</li>
-				<li class="project-box">
+				<li class="hidden">
 					<img class="project-photo" src="http://placehold.it/350x240">
 					<footer>
 						<h1>Projekt 5</h1>
@@ -132,7 +134,7 @@
 					</footer>
 					<p class="description">Lorem ipsum dolor sit amet interdum vehicula. Etiam urna turpis vitae odio. In laoreet feugiat. Proin urna. Nam quis felis sollicitudin vitae, consequat non, fringilla.Nam in posuere sed, congue et, justo. Vestibulum consectetuer adipiscing aliquet in, adipiscing gravida non, ipsum. Nam vestibulum in, mollis nulla ligula ut tellus malesuada. <a href="#">→</a></p>
 				</li>
-				<li class="project-box">
+				<li class="hidden">
 					<img class="project-photo" src="http://placehold.it/350x240">
 					<footer>
 						<h1>Projekt 6</h1>
@@ -147,7 +149,7 @@
 	<section id="contact">
 		<div class="wrapper">
 			<header><h2>Kontakt</h2></header>
-			<form>
+			<form class="hidden">
 				<label>Napisz do mnie!</label>
 				<textarea placeholder="Napisz wiadomość..." maxlength="3000" name="message"></textarea>
 				<input type="text" placeholder="Twoje imię" maxlength="48" name="name">
