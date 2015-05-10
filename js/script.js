@@ -6,19 +6,25 @@ $(document).ready(function() {
 			progressbarAnimation();
 		});
 
-	var projects = new ScrollMagic.Scene({triggerElement: "#projects", duration: 100, offset: -100})
-	.addTo(controller).on("enter leave", function (e) {
-			$('#projects li').removeClass('hidden');
-			$('#projects li:nth-child(odd)').addClass('fadeInLeft');
-			$('#projects li:nth-child(even)').addClass('fadeInRight');
-		});
-
+	if($(document).width() >= 1000) {
+		console.log($(document).width());
+		var projects = new ScrollMagic.Scene({triggerElement: "#projects", duration: 100, offset: -100})
+		.addTo(controller).on("enter leave", function (e) {
+				$('#projects li').removeClass('hidden');
+				$('#projects li:nth-child(odd)').addClass('fadeInLeft');
+				$('#projects li:nth-child(even)').addClass('fadeInRight');
+			});
+	} else {
+		$('#projects li').removeClass('hidden');
+	}
 
 	var contact = new ScrollMagic.Scene({triggerElement: "#contact", duration: 100, offset: -100})
 	.addTo(controller).on("enter leave", function (e) {
 			$('#contact form').removeClass('hidden');
 			$('#contact form').addClass('fadeInDown');
 		});
+
+
 
 
   var skills = new Array();
