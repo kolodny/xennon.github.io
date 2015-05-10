@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	var controller = new ScrollMagic.Controller();
 
-	var skills = new ScrollMagic.Scene({triggerElement: "#skills", duration: 500})
+	var skills = new ScrollMagic.Scene({triggerElement: "#skills ul", duration: 500})
 	.addTo(controller).on("enter leave", function (e) {
 			progressbarAnimation();
 		});
@@ -9,15 +9,15 @@ $(document).ready(function() {
 	var projects = new ScrollMagic.Scene({triggerElement: "#projects", duration: 100, offset: -100})
 	.addTo(controller).on("enter leave", function (e) {
 			$('#projects li').removeClass('hidden');
-			$('#projects li:nth-child(odd)').addClass('animated fadeInLeft');
-			$('#projects li:nth-child(even)').addClass('animated fadeInRight');
+			$('#projects li:nth-child(odd)').addClass('fadeInLeft');
+			$('#projects li:nth-child(even)').addClass('fadeInRight');
 		});
 
 
 	var contact = new ScrollMagic.Scene({triggerElement: "#contact", duration: 100, offset: -100})
 	.addTo(controller).on("enter leave", function (e) {
 			$('#contact form').removeClass('hidden');
-			$('#contact form').addClass('animated fadeInUp');
+			$('#contact form').addClass('fadeInDown');
 		});
 
 
