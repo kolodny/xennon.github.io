@@ -564,7 +564,7 @@ h2:before {
   }
 
   #contact {
-    height: 80%;
+    height: 700px;
   }
 
   #contact form {
@@ -601,7 +601,7 @@ h2:before {
 
   #bio p {
     width: 300px;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
   }
 
   #skills .skill-bar {
