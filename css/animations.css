@@ -1,10 +1,8 @@
 /* Animations */
 
 .bounce {
-  -webkit-animation-name: bounce;
-  -moz-animation-name: bounce;
-  -o-animation-name: bounce;
-  animation-name: bounce;
+  animation: bounce ease-in-out 4s infinite;
+  -webkit-animation: bounce ease-in-out 4s infinite;
 }
  
 @-webkit-keyframes bounce {
@@ -54,46 +52,6 @@
   100% {
     opacity:1;
     -webkit-transform: scale(1.00) ;
-  }
-}
-
-/*Grow*/
-
-@keyframes grow{
-  0% {
-    height: 60px;
-  }
-  100% {
-    height: 100%;
-  }
-}
-
-@-webkit-keyframes grow {
-  0% {
-    height: 60px;
-  }
-  100% {
-    height: 100%;
-  }
-}
-
-/*Opacity*/
-
-@keyframes opacity{
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes opacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 

@@ -7,7 +7,6 @@ $(document).ready(function() {
 		});
 
 	if($(document).width() >= 1000) {
-		console.log($(document).width());
 		var projects = new ScrollMagic.Scene({triggerElement: "#projects", duration: 100, offset: -100})
 		.addTo(controller).on("enter leave", function (e) {
 				$('#projects li').removeClass('hidden');
@@ -24,21 +23,19 @@ $(document).ready(function() {
 			$('#contact form').addClass('fadeInDown');
 		});
 
-
-
-
   var skills = new Array();
-	  skills[0] = 65; //html/css
-	  skills[1] = 45; //sass
-	  skills[2] = 40; //js/jquery
-	  skills[3] = 40; //angular
-	  skills[4] = 65; //illustrator
-	  skills[5] = 55; //git
-	  skills[6] = 40; //c++
-	  skills[7] = 40; //arduino
+	  skills[0] = 60; //html/css
+	  skills[1] = 40; //sass
+	  skills[2] = 30; //js/jquery
+	  skills[3] = 30; //angular
+	  skills[4] = 60; //illustrator
+	  skills[5] = 50; //git
+	  skills[6] = 30; //c++
+	  skills[7] = 5; //ruby
+	  skills[8] = 30; //arduino
 
 	function progressbarAnimation(){
-		for(var i=0; i<8; i++) {
+		for(var i=0; i<skills.length; i++) {
 				$('.fill:eq(' + i +')').animate({
 			    width: skills[i] + '%'
 					}, 1000);
@@ -48,6 +45,13 @@ $(document).ready(function() {
 	$('#arrow').click(function(){
 		$('html, body').animate({
 		    scrollTop: $('#bio').offset().top
+		}, 1000);
+		return false;
+	});
+
+	$('#page-footer h3').click(function(){
+		$('html, body').animate({
+		    scrollTop: $('#landing').offset().top
 		}, 1000);
 		return false;
 	});

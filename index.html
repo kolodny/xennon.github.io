@@ -4,9 +4,9 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title></title>
-		<meta name="description" content="">
-		<meta name="keywords" content="">
-		<meta name="author" content="">
+		<meta name="description" content="My portfolio.">
+		<meta name="keywords" content="portfolio, personal, page">
+		<meta name="author" content="Bartłomiej Jacak">
 		<meta name="viewport" content="width=device-width, initial-scale=0.8">
 		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/normalize.css">
@@ -35,6 +35,8 @@
 					<li><a href="https://www.facebook.com" id="fb" target="_blank">Facebook</a></li>
 					<li class="dot">•</li>
 					<li><a href="https://plus.google.com/u/0/111104925459957943875/posts" id="gp" target="_blank">Google +</a></li>
+					<li class="dot">•</li>
+					<li><a href="https://www.iconfinder.com/xennon5" id="iconfinder" target="_blank">Iconfinder</a></li>
 				</ul>
 			</div>
 			<div id="arrow-box">
@@ -80,6 +82,10 @@
 				</li>
 				<li>
 					<span>C++</span>
+					<div class="skill-bar"><div class="fill"></div></div>
+				</li>
+				<li>
+					<span>Ruby</span>
 					<div class="skill-bar"><div class="fill"></div></div>
 				</li>
 				<li>
@@ -149,12 +155,12 @@
 	<section id="contact">
 		<div class="wrapper">
 			<header><h2>Kontakt</h2></header>
-			<form class="hidden">
+			<form class="hidden" method="post">
 				<label>Napisz do mnie!</label>
-				<textarea placeholder="Napisz wiadomość..." maxlength="3000" name="message"></textarea>
-				<input type="text" placeholder="Twoje imię" maxlength="48" name="name">
-				<input type="email" placeholder="Twój e-mail" maxlength="256" name="email">
-				<button type="submit" name="submit">Wyślij</button>
+				<textarea id="textarea" placeholder="Napisz wiadomość..." maxlength="3000" name="message"></textarea>
+				<input id="name-input" type="text" placeholder="Twoje imię" maxlength="48" name="name">
+				<input id="email-input" type="email" placeholder="Twój e-mail" maxlength="256" name="email">
+				<button id="button" type="submit" name="submit">Wyślij</button>
 			</form>
 		</div>
 		<div id="cover"></div>
@@ -164,6 +170,4 @@
 		</footer>
 	</section>
 	</body>
-	<script>
-	</script>
 </html>
