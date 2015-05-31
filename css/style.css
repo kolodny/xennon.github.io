@@ -42,7 +42,6 @@ h2:before {
   content: "- ";
 }
 
-
 .wrapper {
   width: 960px;
   height: 100%;
@@ -493,7 +492,7 @@ h2:before {
   background-color: transparent;
   color: #d0d0d0;
   text-align: center;
-  margin-top: -60px;
+  margin-top: -50px;
   z-index: 200;
   position: relative;
 }
